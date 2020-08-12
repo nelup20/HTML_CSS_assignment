@@ -1,0 +1,82 @@
+
+/* Just resetting body's margin, alternatively for less hassle/guessing use reset.css in the future */
+body{
+    margin: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    height: 16vw;
+    padding-top: 9%;
+    font-size: 4vw;
+}
+
+video{
+    transform: translateY(-54%);
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
+
+#container{
+    width: 70vw;
+    margin: 4vw auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+}
+
+.card{
+    flex: 1;
+    background: green;
+    flex-basis: 180px;
+    height: 13vw;
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5.6vw;
+    font-size: 1.6vw;
+    transition: transform 0.5s;
+
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#about{
+    background-image: url("../img/aboutMe.jpg");
+}
+
+#topics{
+    background-image: url("../img/mathImg.jpg");
+}
+
+#trivia{
+    background-image: url("../img/wowImg.jpg");
+    background-position: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .card a{
+        font-size: 2.5vw;
+    }
+}
