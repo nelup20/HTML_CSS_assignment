@@ -7,52 +7,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-nav{
-    background: red;
-}
-
-ul{
-    list-style: none;
-    position: absolute;
-    right: 3vw;
-    z-index: 999;
-}
-
-ul a{
-    text-decoration: none;
-    color: black;
-    transition: background 0.2s;
-    display: block;
-    width: 100%;
-}
-
-ul div{
-    display: none;
-    border: 1px solid black;
-}
-
-#dropdownBtn{
-    border: 1px solid black;
-    padding: 5px;
-    transition: background 0.3s;
-}
-
-#dropdownBtn:hover{
-    cursor: pointer;
-    background: rgb(209, 209, 209);
-}
-
-#dropdownBtn:hover ~ div{
-    display: block;
-}
-
-ul div:hover{
-    display: block;
-}
-
-ul li a:hover{
-    background: rgb(209, 209, 209);
-}
 
 h1{
     text-align: center;
