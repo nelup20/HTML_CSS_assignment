@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-weight: 400;
+    padding-top: 120px;
+}
+
+#container{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.item{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.question{
+    background-color: rgb(96, 224, 63);
+    padding: 8px;
+    border-radius: 2px;
+}
+
+
+.item input{
+    position: absolute;
+    width: 59.7%;
+    height: 35px;
+    opacity: 0;
+}
+
+.item input:hover{
+    cursor: pointer;
+}
+
+.item input:checked ~ .answer{
+    display: block;
+}
+
+.answer{
+    padding: 10px;
+    border: 1px solid rgb(96, 224, 63);
+    display: none;
+}
+
+.answer a{
+    text-decoration: none;
+    color: blue;
+}
+
+.answer iframe{
+    padding: 15px;
+    width: 96%;
+    height: 400px;
+}
